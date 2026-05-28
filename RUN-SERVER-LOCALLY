@@ -1,0 +1,29 @@
+Alternative (without VS Code)
+
+You can also run a simple server:
+
+Using Node.js
+
+Install:GLOBALLY TO RUN LOCALLY FRONTEND
+
+npm install -g http-server
+
+Run inside project folder:
+
+http-server
+
+Open:
+
+http://127.0.0.1:8080
+Important
+
+Do NOT open HTML files directly from disk when using:
+
+fetch()
+APIs
+modules
+CORS
+authentication
+databases
+
+Always use a local server.

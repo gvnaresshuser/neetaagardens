@@ -182,14 +182,13 @@
                             <form class="form-inline">
 
                                 <!-- Sort -->
-                                <!-- <select class="custom-select widget-title mr-15" id="sortSelect">
+                                <select class="custom-select widget-title mr-15" id="sortSelect">
                                     <option value="default">Sort By</option>
                                     <option value="low-high">Price: Low to High</option>
                                     <option value="high-low">Price: High to Low</option>
                                     <option value="az">Name A-Z</option>
                                     <option value="za">Name Z-A</option>
-                                </select> -->
-                                <select class="custom-select widget-title mr-15" id="sortSelect"></select>
+                                </select>
 
                                 <!-- Category commented-->
                                 <!--   <select class="custom-select widget-title mr-15" id="categorySelect">
@@ -342,12 +341,66 @@
                         </div>
 
                         <!-- Shop Widget -->
-                    <div class="shop-widget best-seller mb-50">
-                        <h4 class="widget-title">Best Seller</h4>
-                        <div class="widget-desc" id="bestSellerContainer"></div>
-                    </div>
+                        <div class="shop-widget best-seller mb-50">
+                            <h4 class="widget-title">Best Seller</h4>
+                            <div class="widget-desc">
 
+                                <!-- Single Best Seller Products -->
+                                <div class="single-best-seller-product d-flex align-items-center">
+                                    <div class="product-thumbnail">
+                                        <a href="shop-details.html"><img src="img/bg-img/4.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="shop-details.html">Cactus Flower</a>
+                                        <p>$10.99</p>
+                                        <div class="ratings">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <!-- Single Best Seller Products -->
+                                <div class="single-best-seller-product d-flex align-items-center">
+                                    <div class="product-thumbnail">
+                                        <a href="shop-details.html"><img src="img/bg-img/5.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="shop-details.html">Tulip Flower</a>
+                                        <p>$11.99</p>
+                                        <div class="ratings">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single Best Seller Products -->
+                                <div class="single-best-seller-product d-flex align-items-center">
+                                    <div class="product-thumbnail">
+                                        <a href="shop-details.html"><img src="img/bg-img/34.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="shop-details.html">Recuerdos Plant</a>
+                                        <p>$9.99</p>
+                                        <div class="ratings">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -532,16 +585,14 @@
                 name: "Tulasi",
                 category: "Medicinal Plants",
                 price: 199,
-                image: "img/plants/tulasi.jpg",
-                bestSeller: true
+                image: "img/plants/tulasi.jpg"
             },
 
             {
                 name: "Bilwa",
                 category: "Medicinal Plants",
                 price: 299,
-                image: "img/plants/bilwa.jpg",
-                bestSeller: true
+                image: "img/plants/bilwa.jpg"
             },
 
             {
@@ -555,8 +606,7 @@
                 name: "Lemon",
                 category: "Exotic Plants",
                 price: 249,
-                image: "img/plants/lemon.jpg",
-                bestSeller: true
+                image: "img/plants/lemon.jpg"
             },
 
             {
@@ -602,68 +652,6 @@
             }
 
         ];
-        //-------------------------------------
-        function renderBestSellers() {
-
-                const container = document.getElementById("bestSellerContainer");
-
-                const bestSellers = plants.filter(p => p.bestSeller);
-
-                container.innerHTML = "";
-
-                bestSellers.forEach(p => {
-
-                    container.innerHTML += `
-            <div class="single-best-seller-product d-flex align-items-center mb-3">
-
-                <div class="product-thumbnail">
-                    <a href="#">
-                        <img src="${p.image}" alt="${p.name}">
-                    </a>
-                </div>
-
-                <div class="product-info">
-                    <a href="#">${p.name}</a>
-                    <p>₹${p.price}</p>
-                    <div class="ratings">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
-
-            </div>
-        `;
-                });
-            }
-        //-------------------------------------
-        function renderSortOptions() {
-
-                const sortSelect = document.getElementById("sortSelect");
-
-                const sortOptions = [
-                    { value: "default", label: "Sort By" },
-                    { value: "low-high", label: "Price: Low to High" },
-                    { value: "high-low", label: "Price: High to Low" },
-                    { value: "az", label: "Name A-Z" },
-                    { value: "za", label: "Name Z-A" }
-                ];
-
-                sortSelect.innerHTML = "";
-
-                sortOptions.forEach(opt => {
-
-                    sortSelect.innerHTML += `
-            <option value="${opt.value}">
-                ${opt.label}
-            </option>
-        `;
-
-                });
-
-            }
         //-------------------------------------
         // Generate Category Dropdown
             function renderCategoryDropdown() {
@@ -746,7 +734,7 @@
             });
 
             // Checkbox Events
-            /* document.querySelectorAll(".category-checkbox")
+            document.querySelectorAll(".category-checkbox")
                 .forEach(checkbox => {
 
                     checkbox.addEventListener("change", () => {
@@ -757,7 +745,7 @@
 
                     });
 
-                }); */
+                });
 
         }
         //-------------------------------------
@@ -825,11 +813,9 @@
         const paginationContainer = document.getElementById("pagination");
 
         const sortSelect = document.getElementById("sortSelect");
-        const categorySelect = document.getElementById("categorySelect");
+        ////const categorySelect = document.getElementById("categorySelect");
         const perPageSelect = document.getElementById("perPageSelect");
 
-        renderBestSellers();
-        renderSortOptions();
         renderCategories();
         renderCategoryDropdown();
 

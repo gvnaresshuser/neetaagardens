@@ -1,0 +1,377 @@
+Microsoft Windows [Version 10.0.26100.8246]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\neetaa-gardens>code .
+
+E:\neetaa-gardens>git init
+Initialized empty Git repository in E:/neetaa-gardens/.git/
+
+E:\neetaa-gardens>git add .
+warning: in the working copy of 'about.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'blog.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cart.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'checkout.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'contact.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/animate.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/bootstrap.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/classy-nav.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/elegant-icon.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/font-awesome.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'css/owl.carousel.min.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'fonts/ElegantIcons.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'fonts/classy.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'fonts/fontawesome-webfont.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'js/active.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'js/bootstrap/bootstrap.min.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'js/bootstrap/popper.min.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'js/jquery/jquery-2.2.4.min.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'js/plugins/plugins.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'portfolio.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scss/_fonts.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scss/_mixin.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scss/_responsive.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scss/_theme_color.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scss/style.scss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'shop-details.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'shop.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'single-portfolio.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'single-post.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'style.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'style.css.map', LF will be replaced by CRLF the next time Git touches it
+
+E:\neetaa-gardens>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .sass-cache/03465f23f19c9b31771cc8acec61089cccc1845c/_fonts.scssc
+        new file:   .sass-cache/03465f23f19c9b31771cc8acec61089cccc1845c/_mixin.scssc
+        new file:   .sass-cache/03465f23f19c9b31771cc8acec61089cccc1845c/_responsive.scssc
+        new file:   .sass-cache/03465f23f19c9b31771cc8acec61089cccc1845c/_theme_color.scssc
+        new file:   .sass-cache/03465f23f19c9b31771cc8acec61089cccc1845c/style.scssc
+        new file:   .sass-cache/475e2dc6ecb7bd594adf3c7ef23377f13ce5685a/_fonts.scssc
+        new file:   .sass-cache/475e2dc6ecb7bd594adf3c7ef23377f13ce5685a/_mixin.scssc
+        new file:   .sass-cache/475e2dc6ecb7bd594adf3c7ef23377f13ce5685a/_responsive.scssc
+        new file:   .sass-cache/475e2dc6ecb7bd594adf3c7ef23377f13ce5685a/_theme_color.scssc
+        new file:   .sass-cache/475e2dc6ecb7bd594adf3c7ef23377f13ce5685a/style.scssc
+        new file:   .sass-cache/92c2ff24315db15914b9d82f622cf290dd0a1856/_fonts.scssc
+        new file:   .sass-cache/92c2ff24315db15914b9d82f622cf290dd0a1856/_mixin.scssc
+        new file:   .sass-cache/92c2ff24315db15914b9d82f622cf290dd0a1856/_responsive.scssc
+        new file:   .sass-cache/92c2ff24315db15914b9d82f622cf290dd0a1856/_theme_color.scssc
+        new file:   .sass-cache/92c2ff24315db15914b9d82f622cf290dd0a1856/style.scssc
+        new file:   .sass-cache/9568d30ed5d2cebc2ad5df4154c8df8099b75c0b/_mixin.scssc
+        new file:   .sass-cache/9568d30ed5d2cebc2ad5df4154c8df8099b75c0b/_responsive.scssc
+        new file:   .sass-cache/9568d30ed5d2cebc2ad5df4154c8df8099b75c0b/_theme_color.scssc
+        new file:   .sass-cache/9568d30ed5d2cebc2ad5df4154c8df8099b75c0b/_variables.scssc
+        new file:   .sass-cache/9568d30ed5d2cebc2ad5df4154c8df8099b75c0b/style.scssc
+        new file:   .sass-cache/b687762b7660b1f71ae40e600add14c590cfdbc7/_mixin.scssc
+        new file:   .sass-cache/b687762b7660b1f71ae40e600add14c590cfdbc7/_responsive.scssc
+        new file:   .sass-cache/b687762b7660b1f71ae40e600add14c590cfdbc7/_theme_color.scssc
+        new file:   .sass-cache/b687762b7660b1f71ae40e600add14c590cfdbc7/_variables.scssc
+        new file:   .sass-cache/b687762b7660b1f71ae40e600add14c590cfdbc7/style.scssc
+        new file:   STEPS
+        new file:   about.html
+        new file:   blog.html
+        new file:   cart.html
+        new file:   checkout.html
+        new file:   contact.html
+        new file:   css/animate.css
+        new file:   css/bootstrap.min.css
+        new file:   css/classy-nav.css
+        new file:   css/elegant-icon.css
+        new file:   css/font-awesome.min.css
+        new file:   css/magnific-popup.css
+        new file:   css/owl.carousel.min.css
+        new file:   fonts/ElegantIcons.eot
+        new file:   fonts/ElegantIcons.svg
+        new file:   fonts/ElegantIcons.ttf
+        new file:   fonts/ElegantIcons.woff
+        new file:   fonts/FontAwesome.otf
+        new file:   fonts/classy.eot
+        new file:   fonts/classy.svg
+        new file:   fonts/classy.ttf
+        new file:   fonts/classy.woff
+        new file:   fonts/fontawesome-webfont.eot
+        new file:   fonts/fontawesome-webfont.svg
+        new file:   fonts/fontawesome-webfont.ttf
+        new file:   fonts/fontawesome-webfont.woff
+        new file:   fonts/fontawesome-webfont.woff2
+        new file:   img/bg-img/1.jpg
+        new file:   img/bg-img/10.jpg
+        new file:   img/bg-img/11.jpg
+        new file:   img/bg-img/12.jpg
+        new file:   img/bg-img/13.jpg
+        new file:   img/bg-img/14.jpg
+        new file:   img/bg-img/15.jpg
+        new file:   img/bg-img/16.jpg
+        new file:   img/bg-img/17.jpg
+        new file:   img/bg-img/18.jpg
+        new file:   img/bg-img/19.jpg
+        new file:   img/bg-img/2.jpg
+        new file:   img/bg-img/20.jpg
+        new file:   img/bg-img/21.jpg
+        new file:   img/bg-img/22.jpg
+        new file:   img/bg-img/23.jpg
+        new file:   img/bg-img/24.jpg
+        new file:   img/bg-img/25.jpg
+        new file:   img/bg-img/26.jpg
+        new file:   img/bg-img/27.jpg
+        new file:   img/bg-img/28.jpg
+        new file:   img/bg-img/29.jpg
+        new file:   img/bg-img/3.jpg
+        new file:   img/bg-img/30.jpg
+        new file:   img/bg-img/31.jpg
+        new file:   img/bg-img/32.jpg
+        new file:   img/bg-img/33.jpg
+        new file:   img/bg-img/34.jpg
+        new file:   img/bg-img/35.jpg
+        new file:   img/bg-img/36.jpg
+        new file:   img/bg-img/37.jpg
+        new file:   img/bg-img/38.jpg
+        new file:   img/bg-img/39.jpg
+        new file:   img/bg-img/4.jpg
+        new file:   img/bg-img/40.png
+        new file:   img/bg-img/41.png
+        new file:   img/bg-img/42.png
+        new file:   img/bg-img/43.png
+        new file:   img/bg-img/44.png
+        new file:   img/bg-img/45.png
+        new file:   img/bg-img/46.png
+        new file:   img/bg-img/47.png
+        new file:   img/bg-img/48.png
+        new file:   img/bg-img/49.jpg
+        new file:   img/bg-img/5.jpg
+        new file:   img/bg-img/6.jpg
+        new file:   img/bg-img/7.jpg
+        new file:   img/bg-img/8.jpg
+        new file:   img/bg-img/9.jpg
+        new file:   img/bg-img/cool-facts.png
+        new file:   img/bg-img/subscribe.png
+        new file:   img/bg-img/team1.png
+        new file:   img/bg-img/team2.png
+        new file:   img/bg-img/team3.png
+        new file:   img/bg-img/team4.png
+        new file:   img/core-img/b1.png
+        new file:   img/core-img/b2.png
+        new file:   img/core-img/b3.png
+        new file:   img/core-img/b4.png
+        new file:   img/core-img/cf1.png
+        new file:   img/core-img/cf2.png
+        new file:   img/core-img/cf3.png
+        new file:   img/core-img/cf4.png
+        new file:   img/core-img/favicon.ico
+        new file:   img/core-img/leaf.png
+        new file:   img/core-img/logo - Copy.png
+        new file:   img/core-img/logo.png
+        new file:   img/core-img/pot.png
+        new file:   img/core-img/s1.png
+        new file:   img/core-img/s2.png
+        new file:   img/core-img/s3.png
+        new file:   index.html
+        new file:   js/active.js
+        new file:   js/bootstrap/bootstrap.min.js
+        new file:   js/bootstrap/popper.min.js
+        new file:   js/jquery/jquery-2.2.4.min.js
+        new file:   js/plugins/plugins.js
+        new file:   portfolio.html
+        new file:   scss/_fonts.scss
+        new file:   scss/_mixin.scss
+        new file:   scss/_responsive.scss
+        new file:   scss/_theme_color.scss
+        new file:   scss/style.scss
+        new file:   shop-details.html
+        new file:   shop.html
+        new file:   single-portfolio.html
+        new file:   single-post.html
+        new file:   style.css
+        new file:   style.css.map
+
+
+E:\neetaa-gardens>git commit -m "initial commit"
+[master (root-commit) 31d8dfd] initial commit
+ 141 files changed, 23498 insertions(+)
+ create mode 100644 .sass-cache/03465f23f19c9b31771cc8acec61089cccc1845c/_fonts.scssc
+ create mode 100644 .sass-cache/03465f23f19c9b31771cc8acec61089cccc1845c/_mixin.scssc
+ create mode 100644 .sass-cache/03465f23f19c9b31771cc8acec61089cccc1845c/_responsive.scssc
+ create mode 100644 .sass-cache/03465f23f19c9b31771cc8acec61089cccc1845c/_theme_color.scssc
+ create mode 100644 .sass-cache/03465f23f19c9b31771cc8acec61089cccc1845c/style.scssc
+ create mode 100644 .sass-cache/475e2dc6ecb7bd594adf3c7ef23377f13ce5685a/_fonts.scssc
+ create mode 100644 .sass-cache/475e2dc6ecb7bd594adf3c7ef23377f13ce5685a/_mixin.scssc
+ create mode 100644 .sass-cache/475e2dc6ecb7bd594adf3c7ef23377f13ce5685a/_responsive.scssc
+ create mode 100644 .sass-cache/475e2dc6ecb7bd594adf3c7ef23377f13ce5685a/_theme_color.scssc
+ create mode 100644 .sass-cache/475e2dc6ecb7bd594adf3c7ef23377f13ce5685a/style.scssc
+ create mode 100644 .sass-cache/92c2ff24315db15914b9d82f622cf290dd0a1856/_fonts.scssc
+ create mode 100644 .sass-cache/92c2ff24315db15914b9d82f622cf290dd0a1856/_mixin.scssc
+ create mode 100644 .sass-cache/92c2ff24315db15914b9d82f622cf290dd0a1856/_responsive.scssc
+ create mode 100644 .sass-cache/92c2ff24315db15914b9d82f622cf290dd0a1856/_theme_color.scssc
+ create mode 100644 .sass-cache/92c2ff24315db15914b9d82f622cf290dd0a1856/style.scssc
+ create mode 100644 .sass-cache/9568d30ed5d2cebc2ad5df4154c8df8099b75c0b/_mixin.scssc
+ create mode 100644 .sass-cache/9568d30ed5d2cebc2ad5df4154c8df8099b75c0b/_responsive.scssc
+ create mode 100644 .sass-cache/9568d30ed5d2cebc2ad5df4154c8df8099b75c0b/_theme_color.scssc
+ create mode 100644 .sass-cache/9568d30ed5d2cebc2ad5df4154c8df8099b75c0b/_variables.scssc
+ create mode 100644 .sass-cache/9568d30ed5d2cebc2ad5df4154c8df8099b75c0b/style.scssc
+ create mode 100644 .sass-cache/b687762b7660b1f71ae40e600add14c590cfdbc7/_mixin.scssc
+ create mode 100644 .sass-cache/b687762b7660b1f71ae40e600add14c590cfdbc7/_responsive.scssc
+ create mode 100644 .sass-cache/b687762b7660b1f71ae40e600add14c590cfdbc7/_theme_color.scssc
+ create mode 100644 .sass-cache/b687762b7660b1f71ae40e600add14c590cfdbc7/_variables.scssc
+ create mode 100644 .sass-cache/b687762b7660b1f71ae40e600add14c590cfdbc7/style.scssc
+ create mode 100644 STEPS
+ create mode 100644 about.html
+ create mode 100644 blog.html
+ create mode 100644 cart.html
+ create mode 100644 checkout.html
+ create mode 100644 contact.html
+ create mode 100644 css/animate.css
+ create mode 100644 css/bootstrap.min.css
+ create mode 100644 css/classy-nav.css
+ create mode 100644 css/elegant-icon.css
+ create mode 100644 css/font-awesome.min.css
+ create mode 100644 css/magnific-popup.css
+ create mode 100644 css/owl.carousel.min.css
+ create mode 100644 fonts/ElegantIcons.eot
+ create mode 100644 fonts/ElegantIcons.svg
+ create mode 100644 fonts/ElegantIcons.ttf
+ create mode 100644 fonts/ElegantIcons.woff
+ create mode 100644 fonts/FontAwesome.otf
+ create mode 100644 fonts/classy.eot
+ create mode 100644 fonts/classy.svg
+ create mode 100644 fonts/classy.ttf
+ create mode 100644 fonts/classy.woff
+ create mode 100644 fonts/fontawesome-webfont.eot
+ create mode 100644 fonts/fontawesome-webfont.svg
+ create mode 100644 fonts/fontawesome-webfont.ttf
+ create mode 100644 fonts/fontawesome-webfont.woff
+ create mode 100644 fonts/fontawesome-webfont.woff2
+ create mode 100644 img/bg-img/1.jpg
+ create mode 100644 img/bg-img/10.jpg
+ create mode 100644 img/bg-img/11.jpg
+ create mode 100644 img/bg-img/12.jpg
+ create mode 100644 img/bg-img/13.jpg
+ create mode 100644 img/bg-img/14.jpg
+ create mode 100644 img/bg-img/15.jpg
+ create mode 100644 img/bg-img/16.jpg
+ create mode 100644 img/bg-img/17.jpg
+ create mode 100644 img/bg-img/18.jpg
+ create mode 100644 img/bg-img/19.jpg
+ create mode 100644 img/bg-img/2.jpg
+ create mode 100644 img/bg-img/20.jpg
+ create mode 100644 img/bg-img/21.jpg
+ create mode 100644 img/bg-img/22.jpg
+ create mode 100644 img/bg-img/23.jpg
+ create mode 100644 img/bg-img/24.jpg
+ create mode 100644 img/bg-img/25.jpg
+ create mode 100644 img/bg-img/26.jpg
+ create mode 100644 img/bg-img/27.jpg
+ create mode 100644 img/bg-img/28.jpg
+ create mode 100644 img/bg-img/29.jpg
+ create mode 100644 img/bg-img/3.jpg
+ create mode 100644 img/bg-img/30.jpg
+ create mode 100644 img/bg-img/31.jpg
+ create mode 100644 img/bg-img/32.jpg
+ create mode 100644 img/bg-img/33.jpg
+ create mode 100644 img/bg-img/34.jpg
+ create mode 100644 img/bg-img/35.jpg
+ create mode 100644 img/bg-img/36.jpg
+ create mode 100644 img/bg-img/37.jpg
+ create mode 100644 img/bg-img/38.jpg
+ create mode 100644 img/bg-img/39.jpg
+ create mode 100644 img/bg-img/4.jpg
+ create mode 100644 img/bg-img/40.png
+ create mode 100644 img/bg-img/41.png
+ create mode 100644 img/bg-img/42.png
+ create mode 100644 img/bg-img/43.png
+ create mode 100644 img/bg-img/44.png
+ create mode 100644 img/bg-img/45.png
+ create mode 100644 img/bg-img/46.png
+ create mode 100644 img/bg-img/47.png
+ create mode 100644 img/bg-img/48.png
+ create mode 100644 img/bg-img/49.jpg
+ create mode 100644 img/bg-img/5.jpg
+ create mode 100644 img/bg-img/6.jpg
+ create mode 100644 img/bg-img/7.jpg
+ create mode 100644 img/bg-img/8.jpg
+ create mode 100644 img/bg-img/9.jpg
+ create mode 100644 img/bg-img/cool-facts.png
+ create mode 100644 img/bg-img/subscribe.png
+ create mode 100644 img/bg-img/team1.png
+ create mode 100644 img/bg-img/team2.png
+ create mode 100644 img/bg-img/team3.png
+ create mode 100644 img/bg-img/team4.png
+ create mode 100644 img/core-img/b1.png
+ create mode 100644 img/core-img/b2.png
+ create mode 100644 img/core-img/b3.png
+ create mode 100644 img/core-img/b4.png
+ create mode 100644 img/core-img/cf1.png
+ create mode 100644 img/core-img/cf2.png
+ create mode 100644 img/core-img/cf3.png
+ create mode 100644 img/core-img/cf4.png
+ create mode 100644 img/core-img/favicon.ico
+ create mode 100644 img/core-img/leaf.png
+ create mode 100644 img/core-img/logo - Copy.png
+ create mode 100644 img/core-img/logo.png
+ create mode 100644 img/core-img/pot.png
+ create mode 100644 img/core-img/s1.png
+ create mode 100644 img/core-img/s2.png
+ create mode 100644 img/core-img/s3.png
+ create mode 100644 index.html
+ create mode 100644 js/active.js
+ create mode 100644 js/bootstrap/bootstrap.min.js
+ create mode 100644 js/bootstrap/popper.min.js
+ create mode 100644 js/jquery/jquery-2.2.4.min.js
+ create mode 100644 js/plugins/plugins.js
+ create mode 100644 portfolio.html
+ create mode 100644 scss/_fonts.scss
+ create mode 100644 scss/_mixin.scss
+ create mode 100644 scss/_responsive.scss
+ create mode 100644 scss/_theme_color.scss
+ create mode 100644 scss/style.scss
+ create mode 100644 shop-details.html
+ create mode 100644 shop.html
+ create mode 100644 single-portfolio.html
+ create mode 100644 single-post.html
+ create mode 100644 style.css
+ create mode 100644 style.css.map
+
+E:\neetaa-gardens>git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+E:\neetaa-gardens>git remote add origin https://github.com/gvnaresshuser/neetaagardens.git
+
+E:\neetaa-gardens>git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/gvnaresshuser/neetaagardens.git'
+
+E:\neetaa-gardens>git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+E:\neetaa-gardens>git push --set-upstream origin master
+Enumerating objects: 158, done.
+Counting objects: 100% (158/158), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (155/155), done.
+Writing objects: 100% (158/158), 7.09 MiB | 1.09 MiB/s, done.
+Total 158 (delta 27), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (27/27), done.
+To https://github.com/gvnaresshuser/neetaagardens.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+E:\neetaa-gardens>

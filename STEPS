@@ -13,6 +13,54 @@ git branch -M main
 git remote add origin https://github.com/gvnaresshuser/neetaagardens.git
 git push -u origin main
 
+---
+
+https://render.com/
+gvnaressh@gmail.com
+google login
+NARESSH GV
+gvnaressh@gmail.com
+new-->static site
+Public Git Repository
+https://github.com/gvnaresshuser/neetaagardens.git
+
+git branch -m master main
+
+1. Rename your local branch
+
+Run this inside your project:
+
+git branch -m master main 2. Push the new branch to GitHub
+git push -u origin main 3. Set upstream (optional but good)
+git branch --set-upstream-to=origin/main main 4. (Optional) Delete old master branch from GitHub
+
+# NEON:
+
+https://neon.com/
+Login-->Goolge-->gvnaressh@gmail.com
+Project Name:neetaa-gardens
+postgresql://neondb_owner:npg_JC8wdgnq2EUH@ep-late-mouse-apsyn3qf.c-7.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+
+CREATE TABLE contact_messages (
+id SERIAL PRIMARY KEY,
+name VARCHAR(150) NOT NULL,
+email VARCHAR(255) NOT NULL,
+mobile VARCHAR(20) NOT NULL,
+message TEXT NOT NULL,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+# BACKEND API SERVER:
+
+E:\neetaa-gardens-server
+
+After confirming everything is fine:
+
+git push origin --delete master
+⚠️ Important Note
+
+## Since your push already worked on master, nothing is lost. You're just renaming the branch.
+
 NOT WORKING
 https://builder.hostinger.com/AwvMeG47DWIq1v18/preview
 https://builder.hostinger.com/AwvMeG47DWIq1v18/preview

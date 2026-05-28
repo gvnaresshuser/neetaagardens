@@ -1,0 +1,104 @@
+https://builder.hostinger.com/AwvMeG47DWIq1v18/preview
+https://builder.hostinger.com/AwvMeG47DWIq1v18/preview
+https://builder.hostinger.com/AwvMeG47DWIq1v18/preview
+
+* Gardening Works
+* Lawns & Suppliers more than 40 varieties of Fruit Plants.
+* Coco Bricks
+* Vermi Compost
+* Hydroponics
+* Vertical Plants
+
+createaprowebsite.com/hostinger
+
+
+
+*************************************************************************************
+ABOUT US:
+=========
+
+Neeta's Green
+
+Be it a home or an appartment a school or a hospital make your premises cool with plants.
+You order and will be at your door with a planting team.
+
+
+SERVICES:
+========
+
+Plants available
+
+Medicinal Plants
+Medicinal plants have therapeutic properties, used in traditional and modern medicine to treat ailments, boost health, and promote healing.
+
+
+Exotic Plants
+Exotic plants are non-native species, often cultivated for beauty, but can become invasive and disrupt local ecosystems if uncontrolled.
+
+Flower Plants
+Flower plants produce vibrant blooms, enhancing gardens and landscapes with color, fragrance, and beauty, while attracting pollinators like bees.
+
+
+Orchid Plants
+Available Orchids:
+Pomogranite
+Lemon
+Sweet Lemon
+Banana
+Sapota
+Mango
+Coconut
+Neredu
+Bilwa
+Tulasi
+
+Other Services
+We provide the following services:
+* Gardening Works
+* Lawns & Suppliers more than 40 varieties of Fruit Plants.
+* Coco Bricks
+* Vermi Compost
+* Hydroponics
+* Vertical Plants.
+
+HOW TO ADD NEW PLANTS
+
+Just add another object:
+
+{
+    name: "Rose",
+    category: "Flower Plants",
+    price: 399,
+    image: "img/plants/rose.jpg"
+}
+
+Done.
+
+CONTACT US:
+==========
+
+9652645619
+9963202519
+
+neetaa.gudimetla@gmail.com
+
+Pedda Waltair, Visakhapatnam, Andhra Pradesh, India
+Plot:186,Sector:12,MVP Colony,Visakhapatnam-530017
+Mon-Fri - 10:00-19:00
+
+*************************************************************************************
+
+
+Exotic Plants
+Flower Plants
+Orchid Plants
+ Pomegranite
+ Lemon
+ Sweet Lemon
+ Banana
+ Sapota
+ Mango
+ Coconut
+ Neredu
+ Bilwa
+ Tulasi

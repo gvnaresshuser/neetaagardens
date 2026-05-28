@@ -3397,3 +3397,27 @@ img {
 /* ======= The End ======= */
 
 /*# sourceMappingURL=style.css.map */
+
+
+.product-img {
+/*   width: 100%;
+  height: 250px; */
+
+      object-fit: cover;
+  /* fixed uniform height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img img {
+/*   width: 100%;
+  height: 100%; */
+    width: 200px !important;
+      height: 200px !important;
+      object-fit: cover;
+  object-fit: cover;
+  /* key line: keeps image nicely cropped */
+  transition: transform 0.3s ease;
+}
