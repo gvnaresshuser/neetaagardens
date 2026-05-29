@@ -16,7 +16,7 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
+    <script src="config.js"></script>
 </head>
 
 <body>
@@ -71,7 +71,7 @@
                                 </div> -->
                                 <!-- Cart -->
                                 <div class="cart">
-                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
                                         <span>Cart <span class="cart-quantity">(0)</span></span></a>
                                 </div>
                             </div>
@@ -108,7 +108,7 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>                                  
+                                    <li><a href="about.html">About</a></li>
                                     <li><a href="shop.html">Shop</a></li>
                                     <li><a href="portfolio.html">Portfolio</a></li>
                                     <li><a href="contact.html">Contact</a></li>
@@ -232,7 +232,7 @@
                             <h5>Subtotal</h5>
                             <h5 id="subtotal">₹0</h5>
                         </div>
-                       <!--  <div class="shipping d-flex justify-content-between">
+                        <!--  <div class="shipping d-flex justify-content-between">
                             <h5>Shipping</h5>
                             <div class="shipping-address">
                                 <form action="#" method="post">
@@ -251,15 +251,16 @@
                         </div> -->
                         <div class="shipping d-flex justify-content-between">
                             <h5>Mobile Number</h5>
-                        
+
                             <div class="shipping-address" style="width:70%;">
-                        
-                                <input type="tel" style="font-size:18px;" class="form-control" id="mobileNumber" maxlength="10" placeholder="Enter Mobile Number">
-                        
+
+                                <input type="tel" style="font-size:18px;" class="form-control" id="mobileNumber"
+                                    maxlength="10" placeholder="Enter Mobile Number">
+
                                 <small class="text-muted">
                                     Order confirmation will be sent to this number
                                 </small>
-                        
+
                             </div>
                         </div>
                         <div class="total d-flex justify-content-between">
@@ -435,7 +436,7 @@
     <script src="js/active.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-       let cartItems =
+        let cartItems =
             JSON.parse(localStorage.getItem("cart")) || [];
 
         renderCart();
@@ -596,48 +597,48 @@
         }
         function placeOrder() {
 
-                const mobileNumber =
-                    document.getElementById("mobileNumber")
-                        .value
-                        .trim();
+            const mobileNumber =
+                document.getElementById("mobileNumber")
+                    .value
+                    .trim();
 
-                if (!/^[6-9]\d{9}$/.test(mobileNumber)) {
+            if (!/^[6-9]\d{9}$/.test(mobileNumber)) {
 
-                    alert("Please enter a valid 10-digit mobile number");
+                alert("Please enter a valid 10-digit mobile number");
 
-                    return;
-                }
-
-                const cartItems =
-                    JSON.parse(localStorage.getItem("cart"))
-                    || [];
-
-                const orderData = {
-
-                    mobileNumber: mobileNumber,
-
-                    orderDate: new Date().toISOString(),
-
-                    items: cartItems
-
-                };
-
-                console.log(orderData);
-
-                // Later send to PHP
-                /*
-                fetch("save_order.php", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify(orderData)
-                });
-                */
-
-                alert("Order placed successfully");
+                return;
             }
-            
+
+            const cartItems =
+                JSON.parse(localStorage.getItem("cart"))
+                || [];
+
+            const orderData = {
+
+                mobileNumber: mobileNumber,
+
+                orderDate: new Date().toISOString(),
+
+                items: cartItems
+
+            };
+
+            console.log(orderData);
+
+            // Later send to PHP
+            /*
+            fetch("save_order.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(orderData)
+            });
+            */
+
+            alert("Order placed successfully");
+        }
+
     </script>
     <script>
 
@@ -703,7 +704,7 @@
                     btn.innerHTML = "Placing Order...";
                     btn.style.pointerEvents = "none";
 
-                    const response = await fetch(
+                    /* const response = await fetch(
                         "http://localhost:3000/orders",
                         {
                             method: "POST",
@@ -714,7 +715,19 @@
                             body:
                                 JSON.stringify(orderData)
                         }
+                    ); */
+                    //----------------------------------------
+                    const response = await fetch(
+                        `${API_BASE_URL}/orders`,
+                        {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify(orderData)
+                        }
                     );
+                    //----------------------------------------
 
                     const result =
                         await response.json();
@@ -769,21 +782,21 @@
                         "auto";
                 }
             });
-            function updateCartCount() {
+        function updateCartCount() {
 
-                    const cart =
-                        JSON.parse(localStorage.getItem("cart"))
-                        || [];
+            const cart =
+                JSON.parse(localStorage.getItem("cart"))
+                || [];
 
-                    const count = cart.reduce(
-                        (total, item) =>
-                            total + (item.quantity || 1),
-                        0
-                    );
+            const count = cart.reduce(
+                (total, item) =>
+                    total + (item.quantity || 1),
+                0
+            );
 
-                    document.querySelector(".cart-quantity")
-                        .innerHTML = `(${count})`;
-                }
+            document.querySelector(".cart-quantity")
+                .innerHTML = `(${count})`;
+        }
 
     </script>
 </body>
