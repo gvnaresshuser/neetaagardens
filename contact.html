@@ -16,6 +16,7 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <script src="config.js"></script>
 
 </head>
 
@@ -39,12 +40,13 @@
                         <div class="top-header-content d-flex align-items-center justify-content-between">
                             <!-- Top Header Content -->
                             <div class="top-header-meta">
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="neetaa.gudimetla@gmail.com">
+                                <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                    title="neetaa.gudimetla@gmail.com">
                                     <i class="fa fa-envelope-o" style="font-size:18px;" aria-hidden="true"></i>
                                     <span style="font-size:15px;">Email: neetaa.gudimetla@gmail.com</span>
                                 </a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+91 96 526 456 19"><i class="fa fa-phone"
-                                        aria-hidden="true" style="font-size:18px;"></i>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+91 96 526 456 19"><i
+                                        class="fa fa-phone" aria-hidden="true" style="font-size:18px;"></i>
                                     <span style="font-size:15px;">Call Us: +91 96 526 456
                                         19</span></a>
                             </div>
@@ -397,16 +399,16 @@
                         <div class="border-line"></div>
                     </div>
                     <!-- Copywrite Text -->
-                <div class="copywrite-text">
-                    <p>&copy;
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;
-                        <script>document.write(new Date().getFullYear());</script> All rights reserved |
-                        <i class="fa fa-heart" style="color:red;" aria-hidden="true"></i>
-                        <a href="index.html">NeetaaGardens</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </p>
-                </div>
+                    <div class="copywrite-text">
+                        <p>&copy;
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved |
+                            <i class="fa fa-heart" style="color:red;" aria-hidden="true"></i>
+                            <a href="index.html">NeetaaGardens</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
                     <!-- Footer Nav -->
                     <div class="col-12 col-md-6">
                         <div class="footer-nav">
@@ -472,13 +474,25 @@
                 submitBtn.disabled = true;
                 submitBtn.innerHTML = "Sending...";
 
-                const response = await fetch("http://localhost:3000/contact", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify(data)
-                });
+                /*  const response = await fetch("http://localhost:3000/contact", {
+                     method: "POST",
+                     headers: {
+                         "Content-Type": "application/json"
+                     },
+                     body: JSON.stringify(data)
+                 }); */
+                //---------------------------------------
+                const response = await fetch(
+                    `${API_BASE_URL}/contact`,
+                    {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(data)
+                    }
+                );
+                //-------------------------------------------------
 
                 const result = await response.json();
 

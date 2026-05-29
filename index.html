@@ -16,6 +16,7 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <script src="config.js"></script>
     <style>
         /* //-------------- PORTFOLIO RELATED -------------------- */
         #portfolioContainer {
@@ -137,7 +138,7 @@
                                     </a>
                                 </div>
 
-                             <!--    <div class="cart">
+                                <!--    <div class="cart">
                                     <a href="orders.html">
                                         <i class="fa fa-user" aria-hidden="true" style="margin-left:20px;font-size:18px;"></i>                                
                                         <span style="font-size:15px;">
@@ -147,9 +148,10 @@
                                 </div> -->
                                 <div class="cart">
                                     <a href="javascript:void(0)" onclick="showAdminLogin()">
-                                        <i class="fa fa-user" aria-hidden="true" style="margin-left:20px;font-size:18px;">
+                                        <i class="fa fa-user" aria-hidden="true"
+                                            style="margin-left:20px;font-size:18px;">
                                         </i>
-                                
+
                                         <span style="font-size:15px;">
                                             Admin
                                         </span>
@@ -1354,8 +1356,21 @@
 
             try {
 
+                /*   const response = await fetch(
+                      "http://localhost:3000/admin/login",
+                      {
+                          method: "POST",
+                          headers: {
+                              "Content-Type": "application/json"
+                          },
+                          body: JSON.stringify({
+                              password
+                          })
+                      }
+                  ); */
+                //-------------------------------------------------
                 const response = await fetch(
-                    "http://localhost:3000/admin/login",
+                    `${API_BASE_URL}/admin/login`,
                     {
                         method: "POST",
                         headers: {
@@ -1366,6 +1381,7 @@
                         })
                     }
                 );
+                //-------------------------------------------------
 
                 const result = await response.json();
 

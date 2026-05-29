@@ -39,12 +39,13 @@
                         <div class="top-header-content d-flex align-items-center justify-content-between">
                             <!-- Top Header Content -->
                             <div class="top-header-meta">
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="neetaa.gudimetla@gmail.com">
+                                <a href="#" data-toggle="tooltip" data-placement="bottom"
+                                    title="neetaa.gudimetla@gmail.com">
                                     <i class="fa fa-envelope-o" style="font-size:18px;" aria-hidden="true"></i>
                                     <span style="font-size:15px;">Email: neetaa.gudimetla@gmail.com</span>
                                 </a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+91 96 526 456 19"><i class="fa fa-phone"
-                                        aria-hidden="true" style="font-size:18px;"></i>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+91 96 526 456 19"><i
+                                        class="fa fa-phone" aria-hidden="true" style="font-size:18px;"></i>
                                     <span style="font-size:15px;">Call Us: +91 96 526 456
                                         19</span></a>
                             </div>
@@ -75,7 +76,7 @@
                                 <div class="cart">
                                     <a href="cart.html">
                                         <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:18px;"></i>
-                                
+
                                         <span style="font-size:15px;">
                                             Cart
                                             <span class="cart-quantity">(0)</span>
@@ -349,7 +350,7 @@
                             <h4 class="widget-title">Best Seller</h4>
                             <div class="widget-desc" id="bestSellerContainer"></div>
                         </div>
-                       
+
 
 
                     </div>
@@ -430,11 +431,11 @@
                             <!-- Single Best Seller Products -->
                             <div class="shop-widget best-seller mb-50">
                                 <div class="widget-desc" id="bestSellerContainer2"></div>
-                            </div>                        
                             </div>
+                        </div>
                     </div>
 
-                   
+
 
                     <!-- Single Footer Widget -->
                     <div class="col-12 col-sm-6 col-lg-3">
@@ -625,17 +626,17 @@
             });
         }
         //-------------------------------------
-         function renderBestSellers2() {
+        function renderBestSellers2() {
 
-                const container = document.getElementById("bestSellerContainer2");
+            const container = document.getElementById("bestSellerContainer2");
 
-                const bestSellers = plants.filter(p => p.bestSeller);
+            const bestSellers = plants.filter(p => p.bestSeller);
 
-                container.innerHTML = "";
+            container.innerHTML = "";
 
-                bestSellers.forEach(p => {
+            bestSellers.forEach(p => {
 
-                    container.innerHTML += `
+                container.innerHTML += `
             <div class="single-best-seller-product d-flex align-items-center mb-3">
 
                 <div class="product-thumbnail">
@@ -658,8 +659,8 @@
 
             </div>
         `;
-                });
-            }
+            });
+        }
         //-------------------------------------
 
         function renderSortOptions() {
@@ -859,15 +860,15 @@
         //----------------------------
         function updateCartCount() {
 
-                const cart = JSON.parse(
-                    localStorage.getItem("cart")
-                ) || [];
+            const cart = JSON.parse(
+                localStorage.getItem("cart")
+            ) || [];
 
-                document.querySelector(".cart-quantity").innerHTML =
-                    `(${cart.length})`;
-            }
+            document.querySelector(".cart-quantity").innerHTML =
+                `(${cart.length})`;
+        }
 
-            updateCartCount();
+        updateCartCount();
         //----------------------------
 
         function renderProducts() {
@@ -1012,37 +1013,37 @@
         //--------------------------
         function addToCart(index) {
 
-                const product = plants[index];
+            const product = plants[index];
 
-                let cart = JSON.parse(
-                    localStorage.getItem("cart")
-                ) || [];
+            let cart = JSON.parse(
+                localStorage.getItem("cart")
+            ) || [];
 
-                // Check if already exists
-                const existingItem = cart.find(
-                    item => item.name === product.name
-                );
+            // Check if already exists
+            const existingItem = cart.find(
+                item => item.name === product.name
+            );
 
-                if (existingItem) {
-                    existingItem.quantity += 1;
-                } else {
-                    cart.push({
-                        ...product,
-                        quantity: 1
-                    });
-                }
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    ...product,
+                    quantity: 1
+                });
+            }
 
-                localStorage.setItem(
-                    "cart",
-                    JSON.stringify(cart)
-                );
+            localStorage.setItem(
+                "cart",
+                JSON.stringify(cart)
+            );
 
-                // Update cart count
-                document.querySelector(".cart-quantity").innerHTML =
-                    `(${cart.length})`;
+            // Update cart count
+            document.querySelector(".cart-quantity").innerHTML =
+                `(${cart.length})`;
 
-                //alert(product.name + " added to cart");
-                Swal.fire({
+            //alert(product.name + " added to cart");
+            Swal.fire({
                 icon: "success",
                 title: "🛒 Product Added",
                 html: `
@@ -1054,7 +1055,7 @@
                 timer: 2000,
                 showConfirmButton: false
             });
-            }
+        }
         //--------------------------
 
         function renderPagination(totalItems) {
@@ -1083,10 +1084,10 @@
         }
 
         document.getElementById("search")
-                .addEventListener("keyup", () => {
-                    currentPage = 1;
-                    renderProducts();
-                });
+            .addEventListener("keyup", () => {
+                currentPage = 1;
+                renderProducts();
+            });
 
         sortSelect.addEventListener("change", () => {
             currentPage = 1;
@@ -1116,21 +1117,21 @@
 
         renderProducts();
 
-                function updateCartCount() {
+        function updateCartCount() {
 
-                        const cart =
-                            JSON.parse(localStorage.getItem("cart"))
-                            || [];
+            const cart =
+                JSON.parse(localStorage.getItem("cart"))
+                || [];
 
-                        const count = cart.reduce(
-                            (total, item) =>
-                                total + (item.quantity || 1),
-                            0
-                        );
+            const count = cart.reduce(
+                (total, item) =>
+                    total + (item.quantity || 1),
+                0
+            );
 
-                        document.querySelector(".cart-quantity")
-                            .innerHTML = `(${count})`;
-                    }
+            document.querySelector(".cart-quantity")
+                .innerHTML = `(${count})`;
+        }
     </script>
 </body>
 

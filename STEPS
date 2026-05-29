@@ -1,3 +1,7 @@
+# LIVE BACKEND SERVER URL:
+
+https://neetaagardens-server.onrender.com
+
 TO START USING HTTP SERVER
 http-server
 
@@ -173,3 +177,74 @@ Coconut
 Neredu
 Bilwa
 Tulasi
+
+Microsoft Windows [Version 10.0.26100.8246]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\neetaa-gardens>git add .
+warning: in the working copy of 'about.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'blog.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'cart.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'checkout.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'contact.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'portfolio.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'shop copy.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'shop.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'single-portfolio.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'single-post.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index copy 2.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index copy 3.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index copy.html', LF will be replaced by CRLF the next time Git touches it
+
+E:\neetaa-gardens>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+(use "git restore --staged <file>..." to unstage)
+modified: STEPS
+modified: about.html
+modified: blog.html
+modified: cart.html
+modified: checkout.html
+modified: contact.html
+new file: index copy 2.html
+new file: index copy 3.html
+new file: index copy.html
+modified: index.html
+new file: orders.html
+modified: portfolio.html
+deleted: shop copy 2.html
+deleted: shop copy 3.html
+modified: shop copy.html
+modified: shop.html
+modified: single-portfolio.html
+modified: single-post.html
+
+E:\neetaa-gardens>git commit -m "Updated UI"
+[main a58631a] Updated UI
+18 files changed, 7038 insertions(+), 2785 deletions(-)
+create mode 100644 index copy 2.html
+create mode 100644 index copy 3.html
+create mode 100644 index copy.html
+create mode 100644 orders.html
+delete mode 100644 shop copy 2.html
+delete mode 100644 shop copy 3.html
+
+E:\neetaa-gardens>git push
+Enumerating objects: 31, done.
+Counting objects: 100% (31/31), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (18/18), 29.76 KiB | 1.98 MiB/s, done.
+Total 18 (delta 15), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (15/15), completed with 9 local objects.
+To https://github.com/gvnaresshuser/neetaagardens.git
+9662907..a58631a main -> main
+
+E:\neetaa-gardens>
+
+# LIVE BACKEND SERVER URL:
+
+https://neetaagardens-server.onrender.com
