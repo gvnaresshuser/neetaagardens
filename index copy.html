@@ -16,59 +16,6 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* //-------------- PORTFOLIO RELATED -------------------- */
-        #portfolioContainer {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        #portfolioContainer .single_portfolio_item {
-            margin-bottom: 10px;
-        }
-
-        .alazea-portfolio-area {
-            padding-bottom: 10px;
-        }
-
-        .testimonial-area {
-            clear: both;
-        }
-
-        .alazea-portfolio {
-            height: auto !important;
-            position: relative !important;
-        }
-
-        .alazea-portfolio .single_portfolio_item {
-            position: relative !important;
-            left: auto !important;
-            top: auto !important;
-            float: left;
-            margin-bottom: 10px;
-        }
-
-        #portfolioContainer {
-            min-height: 10px;
-        }
-
-        //----------------------------------
-        .single_portfolio_item {
-            transition: all .4s ease;
-        }
-
-        .hide-item {
-            opacity: 0;
-            transform: scale(.8);
-        }
-
-        .show-item {
-            opacity: 1;
-            transform: scale(1);
-        }
-
-        /* //-------------- PORTFOLIO RELATED -------------------- */
-    </style>
 
 </head>
 
@@ -92,13 +39,12 @@
                         <div class="top-header-content d-flex align-items-center justify-content-between">
                             <!-- Top Header Content -->
                             <div class="top-header-meta">
-                                <a href="#" data-toggle="tooltip" data-placement="bottom"
-                                    title="neetaa.gudimetla@gmail.com">
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="neetaa.gudimetla@gmail.com">
                                     <i class="fa fa-envelope-o" style="font-size:18px;" aria-hidden="true"></i>
                                     <span style="font-size:15px;">Email: neetaa.gudimetla@gmail.com</span>
                                 </a>
-                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+91 96 526 456 19"><i
-                                        class="fa fa-phone" aria-hidden="true" style="font-size:18px;"></i>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+91 96 526 456 19"><i class="fa fa-phone"
+                                        aria-hidden="true" style="font-size:18px;"></i>
                                     <span style="font-size:15px;">Call Us: +91 96 526 456
                                         19</span></a>
                             </div>
@@ -129,34 +75,13 @@
                                 <div class="cart">
                                     <a href="cart.html">
                                         <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:18px;"></i>
-
+                                
                                         <span style="font-size:15px;">
                                             Cart
                                             <span class="cart-quantity">(0)</span>
                                         </span>
                                     </a>
                                 </div>
-
-                             <!--    <div class="cart">
-                                    <a href="orders.html">
-                                        <i class="fa fa-user" aria-hidden="true" style="margin-left:20px;font-size:18px;"></i>                                
-                                        <span style="font-size:15px;">
-                                            Admin
-                                        </span>
-                                    </a>
-                                </div> -->
-                                <div class="cart">
-                                    <a href="javascript:void(0)" onclick="showAdminLogin()">
-                                        <i class="fa fa-user" aria-hidden="true" style="margin-left:20px;font-size:18px;">
-                                        </i>
-                                
-                                        <span style="font-size:15px;">
-                                            Admin
-                                        </span>
-                                    </a>
-                                </div>
-
-
                             </div>
                         </div>
                     </div>
@@ -535,17 +460,139 @@
         </div>
 
         <div class="container-fluid">
-
             <div class="row">
                 <div class="col-12">
                     <div class="alazea-portfolio-filter">
-                        <div class="portfolio-filter" id="portfolioFilter"></div>
+                        <div class="portfolio-filter">
+                            <button class="btn active" data-filter="*">All</button>
+                            <button class="btn" data-filter=".design">Coffee Design</button>
+                            <button class="btn" data-filter=".garden">Garden</button>
+                            <button class="btn" data-filter=".home-design">Home Design</button>
+                            <button class="btn" data-filter=".office-design">Office Design</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row alazea-portfolio" id="portfolioContainer"></div>
+            <div class="row alazea-portfolio">
 
+                <!-- Single Portfolio Area -->
+                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design home-design wow fadeInUp"
+                    data-wow-delay="100ms">
+                    <!-- Portfolio Thumbnail -->
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/16.jpg);"></div>
+                    <!-- Portfolio Hover Text -->
+                    <div class="portfolio-hover-overlay">
+                        <a href="img/bg-img/16.jpg"
+                            class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 1">
+                            <div class="port-hover-text">
+                                <h3>Minimal Flower Store</h3>
+                                <h5>Office Plants</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Area -->
+                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp" data-wow-delay="200ms">
+                    <!-- Portfolio Thumbnail -->
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/17.jpg);"></div>
+                    <!-- Portfolio Hover Text -->
+                    <div class="portfolio-hover-overlay">
+                        <a href="img/bg-img/17.jpg"
+                            class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 2">
+                            <div class="port-hover-text">
+                                <h3>Minimal Flower Store</h3>
+                                <h5>Office Plants</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Area -->
+                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden design wow fadeInUp"
+                    data-wow-delay="300ms">
+                    <!-- Portfolio Thumbnail -->
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/18.jpg);"></div>
+                    <!-- Portfolio Hover Text -->
+                    <div class="portfolio-hover-overlay">
+                        <a href="img/bg-img/18.jpg"
+                            class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 3">
+                            <div class="port-hover-text">
+                                <h3>Minimal Flower Store</h3>
+                                <h5>Office Plants</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Area -->
+                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden office-design wow fadeInUp"
+                    data-wow-delay="400ms">
+                    <!-- Portfolio Thumbnail -->
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/19.jpg);"></div>
+                    <!-- Portfolio Hover Text -->
+                    <div class="portfolio-hover-overlay">
+                        <a href="img/bg-img/19.jpg"
+                            class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 4">
+                            <div class="port-hover-text">
+                                <h3>Minimal Flower Store</h3>
+                                <h5>Office Plants</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Area -->
+                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item design office-design wow fadeInUp"
+                    data-wow-delay="100ms">
+                    <!-- Portfolio Thumbnail -->
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/20.jpg);"></div>
+                    <!-- Portfolio Hover Text -->
+                    <div class="portfolio-hover-overlay">
+                        <a href="img/bg-img/20.jpg"
+                            class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 5">
+                            <div class="port-hover-text">
+                                <h3>Minimal Flower Store</h3>
+                                <h5>Office Plants</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Area -->
+                <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item garden wow fadeInUp" data-wow-delay="200ms">
+                    <!-- Portfolio Thumbnail -->
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/21.jpg);"></div>
+                    <!-- Portfolio Hover Text -->
+                    <div class="portfolio-hover-overlay">
+                        <a href="img/bg-img/21.jpg"
+                            class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 6">
+                            <div class="port-hover-text">
+                                <h3>Minimal Flower Store</h3>
+                                <h5>Office Plants</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Single Portfolio Area -->
+                <div class="col-12 col-lg-6 single_portfolio_item home-design wow fadeInUp" data-wow-delay="300ms">
+                    <!-- Portfolio Thumbnail -->
+                    <div class="portfolio-thumbnail bg-img" style="background-image: url(img/bg-img/22.jpg);"></div>
+                    <!-- Portfolio Hover Text -->
+                    <div class="portfolio-hover-overlay">
+                        <a href="img/bg-img/22.jpg"
+                            class="portfolio-img d-flex align-items-center justify-content-center" title="Portfolio 7">
+                            <div class="port-hover-text">
+                                <h3>Minimal Flower Store</h3>
+                                <h5>Office Plants</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
     <!-- ##### Portfolio Area End ##### -->
@@ -1079,8 +1126,6 @@
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     <script>
         //-------------------------------------
         function renderBestSellers2() {
@@ -1195,117 +1240,6 @@
 
         ];
         renderBestSellers2();
-        //-------------- PORTFOLIO RELATED --------------------
-        const portfolioFilter = document.getElementById("portfolioFilter");
-        const portfolioContainer = document.getElementById("portfolioContainer");
-
-        // Generate Filter Buttons
-        const categories = [...new Set(plants.map(p => p.category))];
-
-        portfolioFilter.innerHTML =
-            `<button class="btn active" data-filter="*">All</button>`;
-
-        categories.forEach(category => {
-            const cls = category.toLowerCase().replace(/\s+/g, "-");
-
-            portfolioFilter.innerHTML += `
-        <button class="btn" data-filter=".${cls}">
-            ${category}
-        </button>
-    `;
-        });
-
-        // Generate Portfolio Items
-        portfolioContainer.innerHTML = "";
-
-        plants.forEach((plant, index) => {
-
-            const cls = plant.category.toLowerCase().replace(/\s+/g, "-");
-
-            portfolioContainer.innerHTML += `
-        <div class="col-12 col-sm-6 col-lg-3 single_portfolio_item ${cls}">
-            <div class="portfolio-thumbnail bg-img"
-                 style="background-image:url('${plant.image}')">
-            </div>
-
-            <div class="portfolio-hover-overlay">
-                <a href="${plant.image}"
-                   class="portfolio-img d-flex align-items-center justify-content-center">
-                    <div class="port-hover-text">
-                        <h3>${plant.name}</h3>
-                        <h5>${plant.category}</h5>
-                    </div>
-                </a>
-            </div>
-        </div>
-    `;
-        });
-        //--------------------------
-        /* setTimeout(() => {
-
-                var $grid = $('#portfolioContainer').isotope({
-                    itemSelector: '.single_portfolio_item',
-                    layoutMode: 'fitRows'
-                });
-
-                $('#portfolioFilter').on('click', 'button', function () {
-
-                    $('#portfolioFilter button')
-                        .removeClass('active');
-
-                    $(this).addClass('active');
-
-                    var filterValue =
-                        $(this).attr('data-filter');
-
-                    $grid.isotope({
-                        filter: filterValue
-                    });
-
-                });
-
-            }, 200); */
-        //--------------------------
-
-        document.querySelectorAll("#portfolioFilter .btn")
-            .forEach(btn => {
-
-                btn.addEventListener("click", function () {
-
-                    document.querySelectorAll("#portfolioFilter .btn")
-                        .forEach(b => b.classList.remove("active"));
-
-                    this.classList.add("active");
-
-                    const filter = this.dataset.filter;
-
-                    document.querySelectorAll(".single_portfolio_item")
-                        .forEach(item => {
-
-                            if (
-                                filter === "*" ||
-                                item.classList.contains(filter.replace(".", ""))
-                            ) {
-
-                                item.style.display = "";
-                                item.style.opacity = "0";
-
-                                setTimeout(() => {
-                                    item.style.opacity = "1";
-                                }, 10);
-
-                            } else {
-
-                                item.style.opacity = "0";
-
-                                setTimeout(() => {
-                                    item.style.display = "none";
-                                }, 300);
-                            }
-                        });
-                });
-            });
-        //-------------- PORTFOLIO RELATED --------------------
 
     </script>
     <script>
@@ -1334,71 +1268,6 @@
 
             document.querySelector(".cart-quantity")
                 .innerHTML = `(${count})`;
-        }
-
-    </script>
-    <script>
-
-        async function showAdminLogin() {
-
-            const { value: password } = await Swal.fire({
-                title: 'Admin Login',
-                input: 'password',
-                inputPlaceholder: 'Enter Password',
-                confirmButtonText: 'Login',
-                confirmButtonColor: '#70c745',
-                showCancelButton: true
-            });
-
-            if (!password) return;
-
-            try {
-
-                const response = await fetch(
-                    "http://localhost:3000/admin/login",
-                    {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json"
-                        },
-                        body: JSON.stringify({
-                            password
-                        })
-                    }
-                );
-
-                const result = await response.json();
-
-                if (result.success) {
-
-                    sessionStorage.setItem(
-                        "adminLoggedIn",
-                        "true"
-                    );
-
-                    window.location.href =
-                        "orders.html";
-
-                } else {
-
-                    Swal.fire({
-                        icon: "error",
-                        title: "Wrong Password",
-                        text: "Access denied"
-                    });
-
-                }
-
-            } catch (err) {
-
-                Swal.fire({
-                    icon: "error",
-                    title: "Server Error",
-                    text: "Unable to verify password"
-                });
-
-            }
-
         }
 
     </script>

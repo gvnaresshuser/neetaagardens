@@ -17,57 +17,37 @@
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <style>
-        /* //-------------- PORTFOLIO RELATED -------------------- */
         #portfolioContainer {
-            display: flex;
-            flex-wrap: wrap;
-        }
+    display: flex;
+    flex-wrap: wrap;
+}
 
-        #portfolioContainer .single_portfolio_item {
-            margin-bottom: 10px;
-        }
+#portfolioContainer .single_portfolio_item {
+    margin-bottom: 10px;
+}
 
-        .alazea-portfolio-area {
-            padding-bottom: 10px;
-        }
+.alazea-portfolio-area {
+    padding-bottom: 10px;
+}
+.testimonial-area {
+    clear: both;
+}
+.alazea-portfolio {
+    height: auto !important;
+    position: relative !important;
+}
 
-        .testimonial-area {
-            clear: both;
-        }
+.alazea-portfolio .single_portfolio_item {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    float: left;
+    margin-bottom: 10px;
+}
 
-        .alazea-portfolio {
-            height: auto !important;
-            position: relative !important;
-        }
-
-        .alazea-portfolio .single_portfolio_item {
-            position: relative !important;
-            left: auto !important;
-            top: auto !important;
-            float: left;
-            margin-bottom: 10px;
-        }
-
-        #portfolioContainer {
-            min-height: 10px;
-        }
-
-        //----------------------------------
-        .single_portfolio_item {
-            transition: all .4s ease;
-        }
-
-        .hide-item {
-            opacity: 0;
-            transform: scale(.8);
-        }
-
-        .show-item {
-            opacity: 1;
-            transform: scale(1);
-        }
-
-        /* //-------------- PORTFOLIO RELATED -------------------- */
+#portfolioContainer {
+    min-height: 10px;
+}
     </style>
 
 </head>
@@ -136,27 +116,6 @@
                                         </span>
                                     </a>
                                 </div>
-
-                             <!--    <div class="cart">
-                                    <a href="orders.html">
-                                        <i class="fa fa-user" aria-hidden="true" style="margin-left:20px;font-size:18px;"></i>                                
-                                        <span style="font-size:15px;">
-                                            Admin
-                                        </span>
-                                    </a>
-                                </div> -->
-                                <div class="cart">
-                                    <a href="javascript:void(0)" onclick="showAdminLogin()">
-                                        <i class="fa fa-user" aria-hidden="true" style="margin-left:20px;font-size:18px;">
-                                        </i>
-                                
-                                        <span style="font-size:15px;">
-                                            Admin
-                                        </span>
-                                    </a>
-                                </div>
-
-
                             </div>
                         </div>
                     </div>
@@ -1079,8 +1038,6 @@
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     <script>
         //-------------------------------------
         function renderBestSellers2() {
@@ -1195,7 +1152,7 @@
 
         ];
         renderBestSellers2();
-        //-------------- PORTFOLIO RELATED --------------------
+        //----------------------------------
         const portfolioFilter = document.getElementById("portfolioFilter");
         const portfolioContainer = document.getElementById("portfolioContainer");
 
@@ -1240,32 +1197,6 @@
         </div>
     `;
         });
-        //--------------------------
-        /* setTimeout(() => {
-
-                var $grid = $('#portfolioContainer').isotope({
-                    itemSelector: '.single_portfolio_item',
-                    layoutMode: 'fitRows'
-                });
-
-                $('#portfolioFilter').on('click', 'button', function () {
-
-                    $('#portfolioFilter button')
-                        .removeClass('active');
-
-                    $(this).addClass('active');
-
-                    var filterValue =
-                        $(this).attr('data-filter');
-
-                    $grid.isotope({
-                        filter: filterValue
-                    });
-
-                });
-
-            }, 200); */
-        //--------------------------
 
         document.querySelectorAll("#portfolioFilter .btn")
             .forEach(btn => {
@@ -1286,26 +1217,14 @@
                                 filter === "*" ||
                                 item.classList.contains(filter.replace(".", ""))
                             ) {
-
                                 item.style.display = "";
-                                item.style.opacity = "0";
-
-                                setTimeout(() => {
-                                    item.style.opacity = "1";
-                                }, 10);
-
                             } else {
-
-                                item.style.opacity = "0";
-
-                                setTimeout(() => {
-                                    item.style.display = "none";
-                                }, 300);
+                                item.style.display = "none";
                             }
                         });
                 });
             });
-        //-------------- PORTFOLIO RELATED --------------------
+        //----------------------------------
 
     </script>
     <script>
@@ -1334,71 +1253,6 @@
 
             document.querySelector(".cart-quantity")
                 .innerHTML = `(${count})`;
-        }
-
-    </script>
-    <script>
-
-        async function showAdminLogin() {
-
-            const { value: password } = await Swal.fire({
-                title: 'Admin Login',
-                input: 'password',
-                inputPlaceholder: 'Enter Password',
-                confirmButtonText: 'Login',
-                confirmButtonColor: '#70c745',
-                showCancelButton: true
-            });
-
-            if (!password) return;
-
-            try {
-
-                const response = await fetch(
-                    "http://localhost:3000/admin/login",
-                    {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json"
-                        },
-                        body: JSON.stringify({
-                            password
-                        })
-                    }
-                );
-
-                const result = await response.json();
-
-                if (result.success) {
-
-                    sessionStorage.setItem(
-                        "adminLoggedIn",
-                        "true"
-                    );
-
-                    window.location.href =
-                        "orders.html";
-
-                } else {
-
-                    Swal.fire({
-                        icon: "error",
-                        title: "Wrong Password",
-                        text: "Access denied"
-                    });
-
-                }
-
-            } catch (err) {
-
-                Swal.fire({
-                    icon: "error",
-                    title: "Server Error",
-                    text: "Unable to verify password"
-                });
-
-            }
-
         }
 
     </script>

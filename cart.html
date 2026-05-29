@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>NeetaaGardens - Gardening &amp; Landscaping HTML Template</title>
+    <title>NeetaaGardens - Gardening &amp; Landscaping</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -66,13 +66,13 @@
                                     </div>
                                 </div> -->
                                 <!-- Login -->
-                                <div class="login">
+                                <!-- <div class="login">
                                     <a href="#"><i class="fa fa-user" aria-hidden="true"></i> <span>Login</span></a>
-                                </div>
+                                </div> -->
                                 <!-- Cart -->
                                 <div class="cart">
-                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart <span
-                                                class="cart-quantity">(1)</span></span></a>
+                                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+                                        <span>Cart <span class="cart-quantity">(0)</span></span></a>
                                 </div>
                             </div>
                         </div>
@@ -108,34 +108,7 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="shop.html">Shop</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="shop.html">Shop</a></li>
-                                                    <li><a href="shop-details.html">Shop Details</a></li>
-                                                    <li><a href="cart.html">Shopping Cart</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="portfolio.html">Portfolio</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                                    <li><a href="single-portfolio.html">Portfolio Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="blog.html">Blog</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="single-post.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><a href="about.html">About</a></li>                                  
                                     <li><a href="shop.html">Shop</a></li>
                                     <li><a href="portfolio.html">Portfolio</a></li>
                                     <li><a href="contact.html">Contact</a></li>
@@ -206,7 +179,7 @@
                                     <th></th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="cartTableBody">
                                 <tr>
                                     <td class="cart_product_img">
                                         <a href="#"><img src="img/bg-img/34.jpg" alt="Product"></a>
@@ -215,7 +188,7 @@
                                     <td class="qty">
                                         <div class="quantity">
                                             <span class="qty-minus"
-                                                onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;"><i
+                                                onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) && qty > 1) effect.value--;return false;"><i
                                                     class="fa fa-minus" aria-hidden="true"></i></span>
                                             <input type="number" class="qty-text" id="qty" step="1" min="1" max="99"
                                                 name="quantity" value="1">
@@ -257,9 +230,9 @@
                         <h5 class="title--">Cart Total</h5>
                         <div class="subtotal d-flex justify-content-between">
                             <h5>Subtotal</h5>
-                            <h5>$9.99</h5>
+                            <h5 id="subtotal">₹0</h5>
                         </div>
-                        <div class="shipping d-flex justify-content-between">
+                       <!--  <div class="shipping d-flex justify-content-between">
                             <h5>Shipping</h5>
                             <div class="shipping-address">
                                 <form action="#" method="post">
@@ -275,13 +248,32 @@
                                     <button type="submit">Update Total</button>
                                 </form>
                             </div>
+                        </div> -->
+                        <div class="shipping d-flex justify-content-between">
+                            <h5>Mobile Number</h5>
+                        
+                            <div class="shipping-address" style="width:70%;">
+                        
+                                <input type="tel" style="font-size:18px;" class="form-control" id="mobileNumber" maxlength="10" placeholder="Enter Mobile Number">
+                        
+                                <small class="text-muted">
+                                    Order confirmation will be sent to this number
+                                </small>
+                        
+                            </div>
                         </div>
                         <div class="total d-flex justify-content-between">
                             <h5>Total</h5>
-                            <h5>$9.99</h5>
+                            <h5 id="grandTotal">₹0</h5>
                         </div>
                         <div class="checkout-btn">
-                            <a href="#" class="btn alazea-btn w-100">PROCEED TO CHECKOUT</a>
+                            <!-- <a href="#" class="btn alazea-btn w-100">PROCEED TO CHECKOUT</a> -->
+                            <!-- <a href="#" class="btn alazea-btn w-100" onclick="placeOrder()">
+                                PLACE ORDER
+                            </a> -->
+                            <a href="#" class="btn alazea-btn w-100" id="placeOrderBtn">
+                                PLACE ORDER
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -414,12 +406,12 @@
                         <div class="footer-nav">
                             <nav>
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Service</a></li>
-                                    <li><a href="#">Portfolio</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -441,6 +433,359 @@
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+       let cartItems =
+            JSON.parse(localStorage.getItem("cart")) || [];
+
+        renderCart();
+
+        function renderCart() {
+
+            const tbody =
+                document.getElementById("cartTableBody");
+
+            tbody.innerHTML = "";
+
+            let subtotal = 0;
+
+            if (cartItems.length === 0) {
+
+                tbody.innerHTML = `
+            <tr>
+                <td colspan="5" class="text-center">
+                    Your cart is empty
+                </td>
+            </tr>
+        `;
+
+                document.getElementById("subtotal").innerHTML = "₹0";
+                document.getElementById("grandTotal").innerHTML = "₹0";
+
+                return;
+            }
+
+            cartItems.forEach((item, index) => {
+
+                const total =
+                    item.price * item.quantity;
+
+                subtotal += total;
+
+                tbody.innerHTML += `
+
+        <tr>
+
+            <td class="cart_product_img">
+
+                <a href="#">
+                    <img src="${item.image}"
+                         alt="${item.name}">
+                </a>
+
+                <h5>${item.name}</h5>
+
+                <small>
+                    ${item.category}
+                </small>
+
+            </td>
+
+            <td class="qty">
+
+                <div class="quantity">
+
+                    <span class="qty-minus"
+                        onclick="decreaseQty(${index})">
+                        <i class="fa fa-minus"></i>
+                    </span>
+
+                    <input type="number"
+                           class="qty-text"
+                           value="${item.quantity}"
+                           readonly>
+
+                    <span class="qty-plus"
+                        onclick="increaseQty(${index})">
+                        <i class="fa fa-plus"></i>
+                    </span>
+
+                </div>
+
+            </td>
+
+            <td class="price">
+                <span>₹${item.price}</span>
+            </td>
+
+            <td class="total_price">
+                <span>₹${total}</span>
+            </td>
+
+            <td class="action">
+
+                <a href="#"
+                   onclick="removeItem(${index})">
+
+                    <i class="icon_close"></i>
+
+                </a>
+
+            </td>
+
+        </tr>
+
+        `;
+            });
+
+            document.getElementById("subtotal")
+                .innerHTML = `₹${subtotal}`;
+
+            document.getElementById("grandTotal")
+                .innerHTML = `₹${subtotal}`;
+
+            updateCartCount();
+        }
+
+        function increaseQty(index) {
+
+            cartItems[index].quantity++;
+
+            saveCart();
+        }
+
+        function decreaseQty(index) {
+
+            if (cartItems[index].quantity > 1) {
+
+                cartItems[index].quantity--;
+
+                saveCart();
+            }
+        }
+
+        function removeItem(index) {
+
+            cartItems.splice(index, 1);
+
+            saveCart();
+        }
+
+        function saveCart() {
+
+            localStorage.setItem(
+                "cart",
+                JSON.stringify(cartItems)
+            );
+
+            renderCart();
+        }
+
+        function updateCartCount() {
+
+            const count =
+                cartItems.reduce(
+                    (sum, item) =>
+                        sum + item.quantity,
+                    0
+                );
+
+            document.querySelector(
+                ".cart-quantity"
+            ).innerHTML = `(${count})`;
+        }
+        function placeOrder() {
+
+                const mobileNumber =
+                    document.getElementById("mobileNumber")
+                        .value
+                        .trim();
+
+                if (!/^[6-9]\d{9}$/.test(mobileNumber)) {
+
+                    alert("Please enter a valid 10-digit mobile number");
+
+                    return;
+                }
+
+                const cartItems =
+                    JSON.parse(localStorage.getItem("cart"))
+                    || [];
+
+                const orderData = {
+
+                    mobileNumber: mobileNumber,
+
+                    orderDate: new Date().toISOString(),
+
+                    items: cartItems
+
+                };
+
+                console.log(orderData);
+
+                // Later send to PHP
+                /*
+                fetch("save_order.php", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(orderData)
+                });
+                */
+
+                alert("Order placed successfully");
+            }
+            
+    </script>
+    <script>
+
+        document.getElementById("placeOrderBtn")
+            .addEventListener("click", async function (e) {
+
+                e.preventDefault();
+
+                const mobile =
+                    document.getElementById("mobileNumber")
+                        .value.trim();
+
+                const cartItems =
+                    JSON.parse(localStorage.getItem("cart"))
+                    || [];
+
+                if (!/^[6-9]\d{9}$/.test(mobile)) {
+
+                    Swal.fire({
+                        icon: "warning",
+                        title: "Invalid Mobile Number",
+                        text: "Please enter a valid 10 digit mobile number.",
+                        confirmButtonColor: "#70c745"
+                    });
+
+                    return;
+                }
+
+                if (cartItems.length === 0) {
+
+                    Swal.fire({
+                        icon: "warning",
+                        title: "Cart Empty",
+                        text: "Please add products to cart.",
+                        confirmButtonColor: "#70c745"
+                    });
+
+                    return;
+                }
+
+                const totalAmount =
+                    cartItems.reduce(
+                        (sum, item) =>
+                            sum + (item.price * item.quantity),
+                        0
+                    );
+
+                const orderData = {
+
+                    mobileNumber: mobile,
+
+                    totalAmount,
+
+                    items: cartItems
+
+                };
+
+                try {
+
+                    const btn =
+                        document.getElementById("placeOrderBtn");
+
+                    btn.innerHTML = "Placing Order...";
+                    btn.style.pointerEvents = "none";
+
+                    const response = await fetch(
+                        "http://localhost:3000/orders",
+                        {
+                            method: "POST",
+                            headers: {
+                                "Content-Type":
+                                    "application/json"
+                            },
+                            body:
+                                JSON.stringify(orderData)
+                        }
+                    );
+
+                    const result =
+                        await response.json();
+
+                    if (result.success) {
+
+                        Swal.fire({
+                            icon: "success",
+                            title: "Order Placed 🌿",
+                            text:
+                                "Thank you for your order.",
+                            confirmButtonColor:
+                                "#70c745"
+                        });
+
+                        localStorage.removeItem("cart");
+
+                        setTimeout(() => {
+                            location.reload();
+                        }, 1500);
+
+                    } else {
+
+                        Swal.fire({
+                            icon: "error",
+                            title: "Order Failed",
+                            text:
+                                "Please try again later."
+                        });
+                    }
+
+                } catch (error) {
+
+                    console.error(error);
+
+                    Swal.fire({
+                        icon: "error",
+                        title: "Server Error",
+                        text:
+                            "Unable to connect to server."
+                    });
+
+                } finally {
+
+                    const btn =
+                        document.getElementById("placeOrderBtn");
+
+                    btn.innerHTML =
+                        "PLACE ORDER";
+
+                    btn.style.pointerEvents =
+                        "auto";
+                }
+            });
+            function updateCartCount() {
+
+                    const cart =
+                        JSON.parse(localStorage.getItem("cart"))
+                        || [];
+
+                    const count = cart.reduce(
+                        (total, item) =>
+                            total + (item.quantity || 1),
+                        0
+                    );
+
+                    document.querySelector(".cart-quantity")
+                        .innerHTML = `(${count})`;
+                }
+
+    </script>
 </body>
 
 </html>
