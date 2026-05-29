@@ -1,3 +1,7 @@
+# LIVE FRONTEND URL:
+
+https://neetaagardens.onrender.com
+
 # LIVE BACKEND SERVER URL:
 
 https://neetaagardens-server.onrender.com
@@ -248,3 +252,31 @@ E:\neetaa-gardens>
 # LIVE BACKEND SERVER URL:
 
 https://neetaagardens-server.onrender.com
+
+E:\neetaa-gardens>git add .
+warning: in the working copy of 'cart.html', LF will be replaced by CRLF the next time Git touches it
+
+E:\neetaa-gardens>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+(use "git restore --staged <file>..." to unstage)
+modified: cart.html
+
+E:\neetaa-gardens>git commit -m "changed cart html file"
+[main a9dbc18] changed cart html file
+1 file changed, 66 insertions(+), 53 deletions(-)
+
+E:\neetaa-gardens>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 740 bytes | 740.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/gvnaresshuser/neetaagardens.git
+a94de01..a9dbc18 main -> main
+
+E:\neetaa-gardens>
